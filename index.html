@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prof. Newton - Agente de Física</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h2>⚛️ Prof. Newton</h2>
+      <p>Seu assistente de Física do Ensino Médio</p>
+    </header>
+
+    <div class="api-key-container">
+      <input type="password" id="apiKeyInput" placeholder="Cole sua chave Groq API (gsk_...)" />
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="message assistant">
+        Olá! Sou o Prof. Newton. Qual dúvida ou fenômeno da Física vamos explorar hoje?
+      </div>
+    </div>
+
+    <form class="chat-input-area" id="chatForm">
+      <input type="text" id="userInput" placeholder="Escreva sua dúvida aqui..." required autocomplete="off" />
+      <button type="submit" id="sendBtn">Enviar</button>
+    </form>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
